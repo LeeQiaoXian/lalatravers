@@ -1,0 +1,91 @@
+.sousuo{
+	max-width: 500px;
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid #A9A9A9;
+	background: #fff;
+}
+.inp{
+	height: 40px;
+    padding: 2px;
+}
+.inp input{
+    width: 85%;
+    height: 35px;
+    font-size: 18px;
+}
+.inp input:focus{
+	outline: none;
+}
+.search-img{
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    width: 15%;
+    height: 37px;
+    line-height: 37px;
+    border: 1px solid #A9A9A9;
+    border-left: none;
+    padding: 1px;
+	background: #4FC4F6 url('../img/search.png') no-repeat center;
+}
+.img-box{
+	max-width: 500px;
+	margin: 10px auto;
+	border: 1px solid #A9A9A9;
+	background: #fff;
+}
+.search-text{
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #A9A9A9;
+	margin: 2px;
+	background: url('../img/hot.png') no-repeat;
+}
+.search-text span{
+    display: block;
+    margin: 0 40px;
+}
+.search-boxs{
+	border: 1px solid #A9A9A9;
+	margin: 2px;
+}
+.search-imgs{
+	display: flex;
+	height: 90px;
+}
+.search-imgs div{
+	flex: 1;
+	overflow: hidden;
+	position: relative;
+    margin: 2px;
+}
+.search-imgs div img{
+    width: 150%;
+    position: relative;
+    margin: 2px;
+    left: -17%;
+}
+.travel-title{
+	position: absolute;
+    left: -2px;
+    bottom: 25px;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.search-txt{
+	display: flex;
+}
+.text{
+	flex: 1;
+	margin: 5px;
+	height: 35px;
+    line-height: 35px;
+	text-align: center;
+	border: 1px solid #A9A9A9;
+}
+.text a{
+	font-size: 13px;
+}

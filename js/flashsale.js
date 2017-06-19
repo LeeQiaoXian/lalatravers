@@ -1,0 +1,94 @@
+var sales = {
+	result:[
+		[//周边
+			{
+				img:'img/zb.jpg',
+				title:'象山',
+				describe:'★象山松兰山海滨 四窗岩漂流 2日游(纯玩 宿五星级酒店含丰富自助早餐)电话咨询',
+				price:'￥379起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/zb1.jpg',
+				title:'大明山',
+				describe:'★大明山胜景 琴湖飞瀑 太湖源·小九寨沟 农家送餐二日 电话咨询',
+				price:'￥200起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/zb2.jpg',
+				title:'莫干山',
+				describe:'★江南名山莫干山 杭州非诚勿扰·西溪湿地 清新养肺二日电话咨询',
+				price:'￥328起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/zb3.jpg',
+				title:'三清山',
+				describe:'★三清山 婺源 古城岩 十里瑶湾 赏花登峰三日 电话咨询',
+				price:'￥379起',
+				time:'剩余时间:3天以上'
+			}
+		],
+		[//国内
+			{
+				img:'img/gn.jpg',
+				title:'丽江',
+				describe:'昆明、大理、丽江双飞六日游响应游购分离！高质低价',
+				price:'￥680起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/gn1.jpg',
+				title:'桂林',
+				describe:'《五星桂林美》桂林+阳朔双卧6日游，小漓江，特惠游0自费2晚5星酒店',
+				price:'￥850起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/gn2.jpg',
+				title:'九寨沟',
+				describe:'成都、九寨沟、黄龙、5晚6日(双飞、百分百无自费、全程当地五星酒店)',
+				price:'￥2650起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/gn3.jpg',
+				title:'腾冲',
+				describe:'昆明、芒市、腾冲、瑞丽 3飞6日游 三飞环游不走回头路',
+				price:'￥799起',
+				time:'剩余时间:3天以上'
+			}
+		],
+		[//出境
+			{
+				img:'img/cj.jpg',
+				title:'漫游东欧',
+				describe:'波兰/捷克/斯洛伐克/匈牙利/奥地利10天7晚',
+				price:'￥7999起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/cj.jpg',
+				title:'欧洲',
+				describe:'德捷法瑞意8晚11日游(MU直飞/布拉格城堡/卢浮宫/萨尔茨堡)',
+				price:'￥8599起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/cj2.jpg',
+				title:'越南',
+				describe:'胡志明+美奈纯玩4晚5日游无购物   ',
+				price:'￥2999起',
+				time:'剩余时间:3天以上'
+			},
+			{
+				img:'img/cj3.jpg',
+				title:'柬埔寨',
+				describe:'吴哥3晚5日游(ZA直飞，全程当五泳池酒店+ 特色自助餐+下午茶)',
+				price:'￥2699起',
+				time:'剩余时间:3天以上'
+			}
+		]
+	]
+}

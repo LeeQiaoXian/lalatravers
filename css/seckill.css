@@ -1,0 +1,45 @@
+.seckills{
+	max-width: 500px;
+	margin: 15px auto;
+	position: relative;
+}
+.seckills img{
+	width: 100%;
+}
+.seckill-text{
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 98%;
+	padding: 5px;
+	background: rgba(0, 0, 0, .4)
+}
+.seckill-text p{
+	color: #B61707;
+    font-weight: bold;
+}
+.seckill-text span{
+	color: #fff;
+	font-size: 12px;
+	margin: 10px;
+}
+.price{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #D76B56;
+}
+.price .L{
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.price .R{
+	float: right;
+	color: white;
+	font-size: 12px;
+}

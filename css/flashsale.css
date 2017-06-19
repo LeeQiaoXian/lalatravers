@@ -1,0 +1,78 @@
+.lists{
+	display: flex;
+	max-width: 500px;
+	margin: 15px auto;
+	background: #fff;
+	border: 1px solid #dfe0df;
+}
+.lists div{
+	flex: 1;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #666666;
+	border: 1px solid #dfe0df;
+	margin: 2px;
+	cursor: pointer;
+}
+.flashsale{
+	max-width: 500px;
+	margin: 15px auto;
+	position: relative;
+}
+.flashsale img{
+	width: 100%;
+}
+.flashsale-title{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, .5);
+}
+.flashsale-text{
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 98%;
+	padding: 5px;
+	background: rgba(0, 0, 0, .4)
+}
+.flashsale-text p{
+	color: #B61707;
+    font-weight: bold;
+}
+.flashsale-text span{
+	color: #fff;
+	font-size: 12px;
+	margin: 10px;
+}
+.price{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #D76B56;
+}
+.price .L{
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.price .R{
+	float: right;
+	color: white;
+	font-size: 12px;
+}
+.sol{
+	background: #F1F1F1;
+	color: #0000FF !important;
+	font-weight: bold;
+}

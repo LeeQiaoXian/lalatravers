@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拉拉钩旅游网</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/dailyrecommend.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="log"><a href="index.html"><img src="img/home.png"></a></div>
+		<div class="title">每日推荐</div>
+		<div class="wo">
+			<img id="back" src="img/goback.png">
+			<a href="myorder.html"><img src="img/userlogin.png"></a></div>
+	</div>
+	<div class="content">
+		<div class="recommend">
+			<a href="productinfo.html"><img src="img/recommend.jpg"></a>
+			<div class="recommend-text"><p>【秒杀】欧洲4国11日</p><span>全程直飞航班 法瑞日德11天</span></div>
+			<div class="price"><span class="L">￥456起</span><span class="R">2015-08-14</span></div>
+		</div>
+		<div class="recommend">
+			<a href="productinfo.html"><img src="img/recommend1.jpg"></a>
+			<div class="recommend-text"><p>【特卖】云南6日</p><span>昆明 大理 丽江4+5温泉</span></div>
+			<div class="price"><span class="L">￥3830起</span><span class="R">2015-12-25</span></div>
+		</div>
+		<div class="recommend">
+			<a href="productinfo.html"><img src="img/recommend2.jpg"></a>
+			<div class="recommend-text"><p>【秒杀】首尔包机5日</p><span>首尔包机 首尔清州PAN秀 汉江游船 乐天世界 温泉超值五日游*四花 特别赠送金秀贤见面会哦</span></div>
+			<div class="price"><span class="L">￥2660起</span><span class="R">2016-09-19</span></div>
+		</div>
+		<div class="recommend">
+			<a href="productinfo.html"><img src="img/recommend3.jpg"></a>
+			<div class="recommend-text"><p>【清仓秒杀】张家界纯玩5日</p><span>张家界、天子山、杨家界、袁家界、凤凰双飞休闲五日</span></div>
+			<div class="price"><span class="L">￥2099起</span><span class="R">2016-10-25</span></div>
+		</div>
+		<div class="recommend">
+			<a href="productinfo.html"><img src="img/recommend4.jpg"></a>
+			<div class="recommend-text"><p>【秒杀】江西龙虎山3日</p><span>泡泡水上乐园、三溪大峡谷、龙虎山问道休闲快乐3日游</span></div>
+			<div class="price"><span class="L">￥395起</span><span class="R">2017-02-20</span></div>
+		</div>
+		<div class="www">www.lavago.com iLaLaGo</div>
+	</div>
+	<div class="footer">
+		<div class="men">
+			<div>
+				<ul class="men-ul">
+					<li><a href="seckill.html">清仓秒杀</a></li>
+					<li><a href="dailyrecommend.html">每日推荐</a></li>
+					<li><a href="flashsale.html">限时特卖</a></li>
+					<li><a href="hotseason.html">当季热卖</a></li>
+				</ul>
+				<a class="men-a" href="#">小二推荐</a>
+			</div>
+			<div class="men-div">
+				<ul class="men-ul">
+					<li><a href="seckill.html">目的地</a></li>
+					<li><a href="rankinglist.html">排行榜</a></li>
+					<li><a href="travelsearch.html">旅游搜索</a></li>
+					<li><a href="onlinetalk.html">在线咨询</a></li>
+				</ul>
+				<a class="men-a" href="#">旅游超市</a>
+			</div>
+			<div>
+				<ul class="men-ul men-ul-last">
+					<li><a href="myorder.html">我的订单</a></li>
+					<li><a href="myorder.html">会员资料</a></li>
+					<li><a href="account.html">关联微信</a></li>
+					<li><a href="about.html">联系我们</a></li>
+					<li><a href="index.html">进入主站</a></li>
+				</ul>
+				<a class="men-a" href="#">订单处理</a>
+			</div>
+		</div>
+		<div class="Totop"><img src="img/toTop.png"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script>
+	//点击回到上一级
+	$('#back').click(function(){
+		history.go(-1);
+	})
+	/*底部的按钮*/
+	var flag = true;
+	$('.men-a').click(function () {
+		flag = true;
+		if ($(this).prev().css('display') == 'block') {
+			$('.men-ul').slideUp();
+		} else{
+			$('.men-ul').slideUp();
+			$(this).prev().slideDown();
+		}
+		//点击其它地方，让菜单隐藏
+		if (flag) {
+			flag = false;
+			$('.content').one('click',addConTentClick);
+		}
+		return false;
+	})
+	function addConTentClick(){
+		$('.men-ul').slideUp();
+		return false;
+	}
+	$('.men-ul li').hover(function(){
+		$(this).css({
+			"background":"#C4C4C4",
+			"cursor":"pointer",
+			"border-radius":"5px"
+		});
+	},function(){
+		$(this).css("background","none");
+	})
+	//回到顶部
+	$(document).scroll(function(){
+		if ($('body').scrollTop() >= 200) {
+			$('.Totop').show();
+		} else {
+			$('.Totop').hide();
+		}
+	});
+	document.querySelector('.Totop').onclick = function(){
+		$('body').animate({
+			scrollTop:0
+		},500);
+	};
+</script>
+</html>

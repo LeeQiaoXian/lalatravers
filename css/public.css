@@ -1,0 +1,120 @@
+html,body,div,ul,li,p,h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/* 头部 */
+.header{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.log{
+	position: absolute;
+	left: 0;
+	top: 0;
+    cursor: pointer;
+}
+.log img{
+	height: 40px;
+}
+.title{
+	text-align: center;
+	color: #FF5400;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.wo{
+	position: absolute;
+	top: 0;
+	right: 0;
+    cursor: pointer;
+}
+.wo img{
+	height: 40px;
+}
+/* 中间 */
+.content{
+    overflow: hidden;
+	background-image: url('../img/bg.gif');
+}
+/* 底部 */
+.www{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FF5400;
+    font-size: 20px;
+    font-family: -webkit-pictograph;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('../img/menubg.png');
+}
+.men{
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 50px;
+}
+.men div{
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    position: relative;
+}
+.men-div{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.men-a{
+    display: block;
+    background-image: url('../img/coin.png');
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: 27px 20px;
+    color: #454545;
+}
+.men-ul{
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 22px;
+    background: url('../img/navbg4.png') no-repeat;
+    background-size: 100% 100%;
+    width: 105px;
+    height: 205px;
+    color: #454545;
+}
+.men-ul li{
+    font-size: 13px;
+}
+.men-ul-last{
+    height: 254px;
+    width: 105px;
+    background: url('../img/navbg5.png') no-repeat;
+    background-size: 100% 100%;
+}
+.Totop{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}

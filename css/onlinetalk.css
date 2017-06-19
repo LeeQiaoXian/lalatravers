@@ -1,0 +1,91 @@
+.talking{
+	max-width: 500px;
+	margin: 10px auto;
+	border: 1px solid #B1C1DD;
+	background: #f1f1f1;
+}
+.talk-cont{
+	height: 60px;
+	border-bottom: 1px solid #B1C1DD;
+	background: #fff; 
+}
+.talk-cont p{
+	font-size: 12px;
+	color: #4D83B9;
+	margin: 10px;
+	position: relative;
+}
+.talk-cont p a{
+    display: block;
+    width: 15%;
+    height: 20px;
+    background: url('../img/bt3.gif') no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -5px;
+    right: 125px;
+}
+.serve{
+    border: 1px solid #B1C1DD;
+    background: #fff;
+    margin: 10px; 
+}
+.serve-txt{
+	height: 250px;
+    border-bottom: 1px solid #A7E3F8;
+}
+.serve-txt p{
+    color: #006CFF;
+    font-size: 13px;
+    margin: 5px;
+}
+.serve-txt span{
+    font-size: 14px;
+    margin-left: 30px;
+}
+.olines{
+	height: 30px;
+	background: #95E3FE;
+	margin-top: 2px;
+	position: relative;
+}
+.olines img{
+	float: right;
+	cursor: pointer;
+}
+.oline-img{
+    position: relative;
+    top: 3px;
+    right: 115px;
+}
+.txtarea{
+	height: 90px;
+	position: relative;
+}
+textarea{
+    width: 78%;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #B1C1DD;
+}
+.fs{
+    width: 20%;
+    height: 75px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+.fs a{
+    background: url('../img/fs.gif') no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    top: 25px;
+    right: -15px;
+}
+.txt-p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}

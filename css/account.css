@@ -1,0 +1,16 @@
+.account{
+	max-width: 500px;
+	margin: 10px auto;
+	cursor: pointer;
+}
+.account-text{
+    width: 100%;
+    height: 230px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.lala{
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+}

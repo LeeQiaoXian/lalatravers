@@ -1,0 +1,151 @@
+.product-title{
+	max-width: 500px;
+	margin: 10px auto;
+	height: 35px;
+	line-height: 35px;
+	background: url('../img/tour_bg.png') repeat-x;
+	background-size: contain;
+}
+.product-title p{
+	color: #fff;
+	font-size: 14px;
+}
+.product-tu{
+	max-width: 500px;
+	margin: 15px auto;
+	position: relative;
+}
+.product-tu img{
+	width: 100%;
+}
+.product-text{
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 100%;
+	background: rgba(0, 0, 0, .4)
+}
+.product-text p{
+	color: #fff;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.product-text b{
+	font-size: 16px;
+}
+.product-text span{
+	color: #fff;
+	font-size: 12px;
+	margin: 10px;
+}
+.price{
+	position: absolute;
+    right: 0;
+    top: 0px;
+}
+.search-text{
+	max-width: 500px;
+	margin: 10px auto;
+	border: 1px solid #D8D8D6;
+	background: #fff;
+}
+.se-tu{
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #D8D8D6;
+	margin: 2px;
+	color: #4fc4f6;
+}
+.infos{
+	display: flex;
+}
+/* .infos div{
+	flex: 1;
+} */
+.infos .le{
+    float: left;
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #D8D8D6;
+    margin: 2px;
+    text-align: center;
+}
+.infos .ri{
+    float: right;
+    width: 78%;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid #D8D8D6;
+}
+.search-text div img{
+	height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+.search-boxs{
+	max-width: 500px;
+	margin: 10px auto;
+	border: 1px solid #D8D8D6;
+	background: #fff;
+	cursor: pointer;
+}
+.ld{
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #D8D8D6;
+	margin: 2px;
+}
+.ld span{
+    color: #4fc4f6;
+}
+.ld img{
+    height: 20px;
+    float: left;
+    margin-top: 7px;
+}
+.search-txt{
+	border: 1px solid #D8D8D6;
+	margin: 2px;
+	display: none;
+}
+.tc img{
+	width: 100%;
+}
+.search-txt p{
+	font-size: 15px;
+}
+.search-txt .p1{
+    color: #d86d05; 
+}
+.w{
+	color: red;
+	font-size: 14px;
+}
+.phons{
+	position: fixed;
+	bottom: 55px;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+}
+.phon-div{
+	height: 50px;
+	border: 1px solid  #D8D8D6;
+}
+.phon-tu{
+    width: 300px;
+    margin: 8px auto;
+    text-align: center;
+}
+.phon-tu a img{
+	width: 30%;
+}
+.phon-tu .tu-a img{
+	width: 10%;
+}
+.www{
+	margin-bottom: 150px;
+}

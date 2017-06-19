@@ -1,0 +1,41 @@
+.lists{
+	display: flex;
+	max-width: 600px;
+	margin: 15px auto;
+	background: #fff;
+	border: 1px solid #dfe0df;
+}
+.lists div{
+	flex: 1;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #999A9B;
+	border-right: 1px solid #dfe0df;
+	cursor: pointer;
+}
+.list-end{
+	border-right: none !important;
+}
+.list-ul{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.list-ul li{
+	position: relative;
+	height: 80px;
+}
+.img{
+	float: left;
+}
+.list-ul li span{
+	position: absolute;
+	right: 5px;
+	bottom: 25px;
+	color: #FF5400;
+    font-weight: bold; 
+}
+.colors{
+	color: #444545 !important;
+	background: #D8F5C7;
+}

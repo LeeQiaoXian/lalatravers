@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拉拉钩旅游网</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/flashsale.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="log"><a href="index.html"><img src="img/home.png"></a></div>
+		<div class="title">限时特卖</div>
+		<div class="wo">
+			<img id="back" src="img/goback.png">
+			<a href="myorder.html"><img src="img/userlogin.png"></a></div>
+	</div>
+	<div class="content">
+		<div class="lists">
+			<div class="tt">周边</div>
+			<div class="tt">国内</div>
+			<div class="tt">出境</div>
+			<div id="zj">自驾</div>
+		</div>
+		<div class="cont">
+			<div class="flashsale">
+				<img src="img/flashsale.jpg">
+				<div class="flashsale-title">国内特卖</div>
+				<div class="flashsale-text"><p>云南6日</p><span>昆明 大理 丽江4+5温泉</span></div>
+				<div class="price"><span class="L">￥580起</span><span class="R">剩余时间：特买已经结束!</span></div>
+			</div>
+			<div class="flashsale">
+				<img src="img/flashsale1.jpg">
+				<div class="flashsale-title">自驾特卖</div>
+				<div class="flashsale-text"><p>暑期南京五星自驾2日</p><span>南京水魔方+句容裕坤开元</span></div>
+				<div class="price"><span class="L">￥769起</span><span class="R">剩余时间：特买已经结束!</span></div>
+			</div>
+			<div class="flashsale">
+				<img src="img/flashsale2.jpg">
+				<div class="flashsale-title">周边特卖</div>
+				<div class="flashsale-text"><p><桐庐休闲3日></p><span>余杭白龙潭、桐庐芦茨湾、深澳古镇农家休闲3日游</span></div>
+				<div class="price"><span class="L">￥295起</span><span class="R">剩余时间：特买已经结束!</span></div>
+			</div>
+			<div class="flashsale">
+				<img src="img/flashsale3.jpg">
+				<div class="flashsale-title">周边特卖</div>
+				<div class="flashsale-text"><p><象山2日></p><span>象山海滨品海鲜、石浦鱼港、海上石林花岙岛二日特价之旅</span></div>
+				<div class="price"><span class="L">￥1880起</span><span class="R">剩余时间：特买已经结束!</span></div>
+			</div>
+			<div class="flashsale">
+				<img src="img/flashsale4.jpg">
+				<div class="flashsale-title">自驾特卖</div>
+				<div class="flashsale-text"><p>暑期安吉自驾2日</p><span>安吉大竹林+安吉藏龙百瀑</span></div>
+				<div class="price"><span class="L">￥359起</span><span class="R">剩余时间：特买已经结束!</span></div>
+			</div>
+		</div>
+		<div class="www">www.lavago.com iLaLaGo</div>
+	</div>
+	<div class="footer">
+		<div class="men">
+			<div>
+				<ul class="men-ul">
+					<li><a href="seckill.html">清仓秒杀</a></li>
+					<li><a href="dailyrecommend.html">每日推荐</a></li>
+					<li><a href="flashsale.html">限时特卖</a></li>
+					<li><a href="hotseason.html">当季热卖</a></li>
+				</ul>
+				<a class="men-a" href="#">小二推荐</a>
+			</div>
+			<div class="men-div">
+				<ul class="men-ul">
+					<li><a href="seckill.html">目的地</a></li>
+					<li><a href="rankinglist.html">排行榜</a></li>
+					<li><a href="travelsearch.html">旅游搜索</a></li>
+					<li><a href="onlinetalk.html">在线咨询</a></li>
+				</ul>
+				<a class="men-a" href="#">旅游超市</a>
+			</div>
+			<div>
+				<ul class="men-ul men-ul-last">
+					<li><a href="myorder.html">我的订单</a></li>
+					<li><a href="myorder.html">会员资料</a></li>
+					<li><a href="account.html">关联微信</a></li>
+					<li><a href="about.html">联系我们</a></li>
+					<li><a href="index.html">进入主站</a></li>
+				</ul>
+				<a class="men-a" href="#">订单处理</a>
+			</div>
+		</div>
+		<div class="Totop"><img src="img/toTop.png"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/flashsale.js"></script>
+<script>
+	// 点击回到上一级
+	$("#back").click(function(){
+		history.go(-1);
+	});
+	/*底部的按钮*/
+	var flag = true;
+	$('.men-a').click(function () {
+		flag = true;
+		if ($(this).prev().css('display') == 'block') {
+			$('.men-ul').slideUp();
+		} else{
+			$('.men-ul').slideUp();
+			$(this).prev().slideDown();
+		}
+		//点击其它地方，让菜单隐藏
+		if (flag) {
+			flag = false;
+			$('.content').one('click',addConTentClick);
+		}
+		return false;
+	})
+	function addConTentClick(){
+		$('.men-ul').slideUp();
+		return false;
+	}
+	$(".lists .tt").click(function(){
+		$(this).addClass('sol').siblings().removeClass('sol');
+		$(".cont").empty();
+		var idex = $(this).index();
+		$.each(sales.result[idex],function(i,item){
+			var divs = $('<div class="flashsale">\
+					<img src="'+item.img+'">\
+					<div class="flashsale-text"><p>'+item.title+'</p><span>'+item.describe+'</span></div>\
+					<div class="price"><span class="L">'+item.price+'</span><span class="R">'+item.time+'</span></div>\
+				</div>')
+				//添加
+			$(".cont").append(divs);
+		});
+	});
+	$(".lists #zj").click(function(){
+		window.location.href = "weekend.html";
+	});
+	$('.men-ul li').hover(function(){
+		$(this).css({
+			"background":"#C4C4C4",
+			"cursor":"pointer",
+			"border-radius":"5px"
+		});
+	},function(){
+		$(this).css("background","none");
+	})
+	//回到顶部
+	$(document).scroll(function(){
+		if ($('body').scrollTop() >= 200) {
+			$('.Totop').show();
+		} else {
+			$('.Totop').hide();
+		}
+	});
+	document.querySelector('.Totop').onclick = function(){
+		$('body').animate({
+			scrollTop:0
+		},500);
+	};
+</script>
+</html>

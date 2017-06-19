@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拉拉钩旅游网</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/myorder.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="log"><a href="index.html"><img src="img/home.png"></a></div>
+		<div class="title">登录</div>
+		<div class="wo">
+			<img id="back" src="img/goback.png">
+			<a href="myorder.html"><img src="img/userlogin.png"></a></div>
+	</div>
+	<div class="content">
+		<form name="form1" action="myorder.html" method="post">
+			<div class="orders">
+				<div class="user">用户名</div>
+				<div class="inp"><input type="text" id="name" placeholder="请输入用户名/手机/邮箱"><img src="img/login.png"></div>
+			</div>
+			<div class="orders">
+				<div class="pwd">密码</div>
+				<div class="inp"><input type="password" id="paswd" placeholder="请输入密码"><img src="img/lock.png"></div>
+			</div>
+			<div class="orders">
+				<div class="login">登陆</div>
+			</div>
+		</form>
+		<div class="orders">
+			<div class="ris"><a href="register.html">立即注册</a></div>
+		</div>
+		<div class="www">www.lavago.com iLaLaGo</div>
+	</div>
+	<div class="footer">
+		<div class="men">
+			<div>
+				<ul class="men-ul">
+					<li><a href="seckill.html">清仓秒杀</a></li>
+					<li><a href="dailyrecommend.html">每日推荐</a></li>
+					<li><a href="flashsale.html">限时特卖</a></li>
+					<li><a href="hotseason.html">当季热卖</a></li>
+				</ul>
+				<a class="men-a" href="#">小二推荐</a>
+			</div>
+			<div class="men-div">
+				<ul class="men-ul">
+					<li><a href="seckill.html">目的地</a></li>
+					<li><a href="rankinglist.html">排行榜</a></li>
+					<li><a href="travelsearch.html">旅游搜索</a></li>
+					<li><a href="onlinetalk.html">在线咨询</a></li>
+				</ul>
+				<a class="men-a" href="#">旅游超市</a>
+			</div>
+			<div>
+				<ul class="men-ul men-ul-last">
+					<li><a href="myorder.html">我的订单</a></li>
+					<li><a href="myorder.html">会员资料</a></li>
+					<li><a href="account.html">关联微信</a></li>
+					<li><a href="about.html">联系我们</a></li>
+					<li><a href="index.html">进入主站</a></li>
+				</ul>
+				<a class="men-a" href="#">订单处理</a>
+			</div>
+		</div>
+		<div class="Totop"><img src="img/toTop.png"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script>
+	//点击回到上一级
+	$('#back').click(function(){
+		history.go(-1);
+	})
+	/*底部的按钮*/
+	var flag = true;
+	$('.men-a').click(function () {
+		flag = true;
+		if ($(this).prev().css('display') == 'block') {
+			$('.men-ul').slideUp();
+		} else{
+			$('.men-ul').slideUp();
+			$(this).prev().slideDown();
+		}
+		//点击其它地方，让菜单隐藏
+		if (flag) {
+			flag = false;
+			$('.content').one('click',addConTentClick);
+		}
+		return false;
+	})
+	function addConTentClick(){
+		$('.men-ul').slideUp();
+		return false;
+	}
+	
+	// function onp(){
+	// 	if (document.form1.name.value == "") {
+	// 		window.alter("用户名不能为空！");
+	// 		return false;
+	// 	} else if (document.form1.paswd.value == "") {
+	// 		window.alter("用户名不能为空！");
+	// 		return false;
+	// 	}
+	// 	document.form1.submit();
+	// }
+	// $(".login").click(function(){
+		// var name = $('#name').val();
+		// var pwd = $('#paswd').val();
+		// console.log(name);
+		
+		// onp();
+	// })
+	$('.men-ul li').hover(function(){
+		$(this).css({
+			"background":"#C4C4C4",
+			"cursor":"pointer",
+			"border-radius":"5px"
+		});
+	},function(){
+		$(this).css("background","none");
+	})
+	//回到顶部
+	$(document).scroll(function(){
+		if ($('body').scrollTop() >= 200) {
+			$('.Totop').show();
+		} else {
+			$('.Totop').hide();
+		}
+	});
+	document.querySelector('.Totop').onclick = function(){
+		$('body').animate({
+			scrollTop:0
+		},500);
+	};
+</script>
+</html>

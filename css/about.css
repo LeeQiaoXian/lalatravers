@@ -1,0 +1,46 @@
+.sales{
+	max-width: 600px;
+	margin: 15px auto;
+	background: #fff;
+	border: 1px solid #D8D8D6;
+	cursor: pointer;
+}
+.sales-title{
+    height: 40px;
+    line-height: 40px;
+    color: #CC6633;
+    font-weight: bold;
+    border: 1px solid #d8d8d6;
+    margin: 2px;
+    background: #F1F1F1;
+}
+.lists{
+	border: 1px solid #d8d8d6;
+    margin: 2px;
+    display: flex;	
+}
+.lists span{
+    font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+}
+.lists a{
+	color: #0000EE;
+	text-decoration: underline;
+}
+.l{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 7px;
+}
+.r{
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 7px;
+}
+.lala{
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+}
